@@ -4,3 +4,5 @@
   hosts: all
   roles:
     - role: ansible-role-greenbay
+      vars:
+        greenbay_sha: 88bd85f71f7425da94dc5c0f8809f38c24226c16
