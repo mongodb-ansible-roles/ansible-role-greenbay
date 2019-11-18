@@ -1,1 +1,8 @@
 ---
+- name: Download greenbay from {{ greenbay_url }}
+  become: true
+  unarchive:
+    creates: /usr/local/bin/greenbay
+    dest: /usr/local/bin
+    src: "{{ greenbay_url }}"
+    remote_src: true
