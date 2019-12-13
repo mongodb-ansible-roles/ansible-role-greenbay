@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/compare/v1.1.0...v1.1.1) (2019-12-13)
+
+
+### Bug Fixes
+
+* Fixed typo in variables ([ed32c4e](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/commit/ed32c4e92b8aedb4bba89b1a40788f394f01728e))
+
 # [1.1.0](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/compare/v1.0.0...v1.1.0) (2019-12-13)
 
 
