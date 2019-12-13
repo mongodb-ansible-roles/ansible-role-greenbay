@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/compare/v1.0.0...v1.1.0) (2019-12-13)
+
+
+### Features
+
+* Added arm support ([d4be39a](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/commit/d4be39a78b9faf5a5fdae594c38a220a1ec989de))
+
 # 1.0.0 (2019-11-18)
 
 
