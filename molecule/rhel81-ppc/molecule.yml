@@ -7,9 +7,7 @@ lint:
   name: yamllint
 platforms:
   - name: rhel81-ppc
-    image: rhel81-ppc
-    registry:
-      url: 557821124784.dkr.ecr.us-east-1.amazonaws.com
+    image: 557821124784.dkr.ecr.us-east-1.amazonaws.com/rhel81-ppc
 provisioner:
   name: ansible
   lint:
