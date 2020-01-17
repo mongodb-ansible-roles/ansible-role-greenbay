@@ -1,0 +1,45 @@
+---
+jobs:
+  test:
+    name: molecule test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+      - name: Amazon ECR "Login" Action for GitHub Actions
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1.0.1
+
+      - uses: actions/checkout@v1
+
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.6
+
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.x
+
+      - name: Install required Python dependencies
+        run: 'pip install docker molecule==2.20.2 molecule[docker]'
+
+      - name: Install required Ruby dependencies
+        run: gem install rubocop
+
+      - run: molecule test --all
+
+      - name: Logout of Amazon ECR
+        if: always()
+        run: docker logout ${{ steps.login-ecr.outputs.registry }}
+
+name: Molecule Test
+'on':
+  - push
+  - pull_request
