@@ -6,3 +6,16 @@
     dest: /usr/local/bin
     src: "{{ greenbay_url }}"
     remote_src: true
+
+- name: Check if /usr/bin exists
+  stat:
+    path: /usr/bin
+  register: usr_bin
+
+- name: Link greenbay binary to common places in PATH
+  become: true
+  file:
+    state: link
+    path: /usr/bin/greenbay
+    src: /usr/local/bin/greenbay
+  when: usr_bin.stat.exists
