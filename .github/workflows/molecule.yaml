@@ -27,6 +27,8 @@ jobs:
       - name: Setup qemu
         run: |
           sudo apt-get install qemu-user-static -y
+          docker pull docker/binfmt:66f9012c56a8316f9244ffd7622d7c21c1f6f28d
+          docker run --privileged docker/binfmt:66f9012c56a8316f9244ffd7622d7c21c1f6f28d
 
       - name: Setup Python
         uses: actions/setup-python@v1
@@ -44,9 +46,8 @@ jobs:
       - name: Install required Ruby dependencies
         run: gem install rubocop
 
-      - run: |
-          cat ~/.docker/config.json
-          molecule --debug test -s rhel81-ppc
+      - name: Run Molecule Test
+        run: molecule test -s rhel81-ppc
 
       - name: Logout of Amazon ECR
         if: always()
