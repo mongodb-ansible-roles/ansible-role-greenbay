@@ -16,7 +16,7 @@ Role Variables
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-------:|:--------:|
 | `greenbay_sha` | SHA of the version of greenbay you want to install | string | `""` | yes |
-| `greenbay_url` | You may specify a custom URL to download greenbay from | string | `""` | no |
+| `greenbay_package_url` | You may specify a custom URL to download greenbay from | string | `""` | no |
 
 Dependencies
 ------------

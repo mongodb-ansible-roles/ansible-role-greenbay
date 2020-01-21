@@ -4,4 +4,4 @@
   roles:
     - role: ansible-role-greenbay
       vars:
-        greenbay_url: https://ansible-molecule-test.s3.amazonaws.com/test_greenbay.tar.gz
+        greenbay_package_url: https://ansible-molecule-test.s3.amazonaws.com/test_greenbay.tar.gz
