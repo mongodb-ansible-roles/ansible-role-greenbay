@@ -40,7 +40,9 @@ jobs:
       - name: Install required Ruby dependencies
         run: gem install rubocop
 
-      - run: molecule test --all
+      - run: |
+          cat ~/.docker/config.json
+          molecule test --all
 
       - name: Logout of Amazon ECR
         if: always()
