@@ -42,7 +42,7 @@ jobs:
 
       - run: |
           cat ~/.docker/config.json
-          molecule test --all
+          molecule --debug test -s rhel81-ppc
 
       - name: Logout of Amazon ECR
         if: always()
