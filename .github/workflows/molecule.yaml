@@ -48,7 +48,7 @@ jobs:
         run: gem install rubocop
 
       - name: Run Molecule Test
-        run: molecule test -s rhel81-ppc
+        run: molecule --debug test -s rhel81-ppc
 
       - name: Logout of Amazon ECR
         if: always()
