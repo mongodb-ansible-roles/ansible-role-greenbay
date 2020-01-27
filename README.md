@@ -3,7 +3,8 @@ Ansible role for greenbay
 
 Installs greenbay
 
-[![CircleCI](https://img.shields.io/circleci/build/github/mongodb-ansible-roles/ansible-role-greenbay/master?style=flat-square)](https://circleci.com/gh/mongodb-ansible-roles/ansible-role-greenbay)
+![](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/workflows/Molecule%20Test/badge.svg)
+![](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/workflows/Release/badge.svg)
 
 Requirements
 ------------
