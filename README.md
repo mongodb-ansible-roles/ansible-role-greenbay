@@ -3,8 +3,9 @@ Ansible role for greenbay
 
 Installs greenbay
 
-![](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/workflows/Molecule%20Test/badge.svg)
-![](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/workflows/Release/badge.svg)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/workflows/Molecule%20Test/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/actions?query=workflow%3A%22Molecule+Test%22)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/workflows/Release/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/actions?query=workflow%3A%22Molecule+Test%22)
+
 
 Requirements
 ------------
