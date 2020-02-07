@@ -3,7 +3,9 @@ Ansible role for greenbay
 
 Installs greenbay
 
-[![CircleCI](https://img.shields.io/circleci/build/github/mongodb-ansible-roles/ansible-role-greenbay/master?style=flat-square)](https://circleci.com/gh/mongodb-ansible-roles/ansible-role-greenbay)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/workflows/Molecule%20Test/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/actions?query=workflow%3A%22Molecule+Test%22)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/workflows/Release/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/actions?query=workflow%3A%22Molecule+Test%22)
+
 
 Requirements
 ------------
@@ -16,7 +18,7 @@ Role Variables
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-------:|:--------:|
 | `greenbay_sha` | SHA of the version of greenbay you want to install | string | `""` | yes |
-| `greenbay_url` | You may specify a custom URL to download greenbay from | string | `""` | no |
+| `greenbay_package_url` | You may specify a custom URL to download greenbay from | string | `""` | no |
 
 Dependencies
 ------------

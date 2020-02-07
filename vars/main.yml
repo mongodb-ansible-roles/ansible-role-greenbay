@@ -2,4 +2,6 @@
 platform_dict:
   x86_64: linux-32
   aarch64: arm
+  ppc64le: power
+  s390x: s390x
 platform: "{{ platform_dict[ansible_architecture] }}"
