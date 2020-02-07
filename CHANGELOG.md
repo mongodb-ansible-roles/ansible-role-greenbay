@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/compare/v1.1.1...v1.2.0) (2020-02-07)
+
+
+### Features
+
+* Add multiplatform and GitHub Actions ([73d3a4b](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/commit/73d3a4bec30d9c155c91baab7f19a24eaf09c916))
+
 ## [1.1.1](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/compare/v1.1.0...v1.1.1) (2019-12-13)
 
 
