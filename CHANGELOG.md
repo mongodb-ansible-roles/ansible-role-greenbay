@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/compare/v1.2.0...v1.3.0) (2021-04-08)
+
+
+### Features
+
+* Add arm64 architecture ([#3](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/issues/3)) ([66df905](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/commit/66df90508c06521d89e64341928966773d81301d))
+
 # [1.2.0](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/compare/v1.1.1...v1.2.0) (2020-02-07)
 
 
