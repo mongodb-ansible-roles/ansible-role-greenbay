@@ -1,3 +1,4 @@
 ---
 greenbay_sha: ""
 greenbay_package_url: http://s3.amazonaws.com/boxes.10gen.com/build/greenbay/greenbay-dist-{{ platform }}-{{ greenbay_sha }}.tar.gz
+greenbay_symlink: true
