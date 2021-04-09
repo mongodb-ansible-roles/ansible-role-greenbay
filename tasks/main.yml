@@ -18,4 +18,6 @@
     state: link
     path: /usr/bin/greenbay
     src: /usr/local/bin/greenbay
-  when: usr_bin.stat.exists
+  when:
+    - usr_bin.stat.exists
+    - greenbay_symlink is true
