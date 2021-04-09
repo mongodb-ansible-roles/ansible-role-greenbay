@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/compare/v1.3.0...v1.4.0) (2021-04-09)
+
+
+### Features
+
+* Allow user to skip symlink step ([#4](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/issues/4)) ([1957fbf](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/commit/1957fbf6d690049cd1b9042412911cc80b10144f))
+
 # [1.3.0](https://github.com/mongodb-ansible-roles/ansible-role-greenbay/compare/v1.2.0...v1.3.0) (2021-04-08)
 
 
